@@ -1,0 +1,10 @@
+create DATABASE alunoDB; 
+show DATABASEs;
+use alunoDB;
+CREATE TABLE 'clientes'(
+    'idCliente' mediumint(8) unsigned NOT NULL auto_increment,
+    'nomeEmpresa'varchar(255)
+    'nomeDiretor'varchar(255) DEFAULT NULL,
+    'numEmpregados' mediumint DEFAULT NULL,
+    PRIMARY KEY ('IDcLIENTE') 
+) AUTO_INCREMENT=1;
