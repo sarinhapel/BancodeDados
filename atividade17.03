@@ -1,0 +1,16 @@
+-- create a table
+CREATE TABLE geografia (
+  populacao float (7),
+  pais VARCHAR(30) NOT NULL,
+  capital  VARCHAR(30) NOT NULL,
+  idioma VARCHAR (30) NOT NULL
+);
+-- insert some values
+INSERT INTO geografia  VALUES ('83.2','Alemanha','Berlim','Alemao');
+INSERT INTO geografia  VALUES ('214.3','Brasil','Brasilia','Portugues');
+INSERT INTO geografia  VALUES ('51.74','Coreia do sul','Seoul','Coreano');
+INSERT INTO geografia VALUES ('331.9','Estados Unidos','Washington','ingles Americano');
+INSERT INTO geografia VALUES ('67.75','França','Paris','Frances');
+INSERT INTO geografia VALUES ('59.11','Italia','Roma','Italiano');
+-- fetch some values
+SELECT * FROM geografia WHERE pais = 'alemanha';
