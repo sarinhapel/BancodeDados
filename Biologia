@@ -1,0 +1,16 @@
+-- create a table
+CREATE TABLE biologia (
+  nome VARCHAR (30),
+  nascimento INT (4) NOT NULL,
+  conhecido por  VARCHAR (250) NOT NULL,
+  morte INT (4) NOT NULL
+);
+-- insert some values
+INSERT INTO  biologia  VALUES ('Robert Hooke','1635','descoberta da celula','1703');
+INSERT INTO  biologia  VALUES ('Carl Linnaeus','1707','desenvolveu o sistema para nomear e organizar organismos vivos','1778');
+INSERT INTO  biologia  VALUES ('Charles Darwin','1809','conhecido como pai da evolução','1882');
+INSERT INTO  biologia  VALUES ('Louis Pasteur','1822','descobertas das causas e prevencoes de doecas','1895');
+INSERT INTO  biologia  VALUES ('Alfred Russel Wallace','1823','viajou pelo mundo observando e coletando amostras de especies','1913');
+INSERT INTO  biologia  VALUES ('Rachel Carson','1907','movimento ambientalista','1964');
+-- fetch some values
+SELECT * FROM  biologia  WHERE nascimento = '1635';
