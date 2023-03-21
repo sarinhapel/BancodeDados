@@ -1,16 +1,17 @@
 -- create a table
-CREATE TABLE biologia (
-  nome VARCHAR (30),
-  nascimento INT (4) NOT NULL,
-  conhecido por  VARCHAR (250) NOT NULL,
-  morte INT (4) NOT NULL
+CREATE TABLE quimica (
+ id INT (3) PRIMARY KEY
+  nome VARCHAR (),
+  formula  VARCHAR () NOT NULL,
+  propriedade VARCHAR() NOT NULL,
+  reacao VARCHAR() NOT NULL
 );
 -- insert some values
-INSERT INTO  biologia  VALUES ('Robert Hooke','1635','descoberta da celula','1703');
-INSERT INTO  biologia  VALUES ('Carl Linnaeus','1707','desenvolveu o sistema para nomear e organizar organismos vivos','1778');
-INSERT INTO  biologia  VALUES ('Charles Darwin','1809','conhecido como pai da evolução','1882');
-INSERT INTO  biologia  VALUES ('Louis Pasteur','1822','descobertas das causas e prevencoes de doecas','1895');
-INSERT INTO  biologia  VALUES ('Alfred Russel Wallace','1823','viajou pelo mundo observando e coletando amostras de especies','1913');
-INSERT INTO  biologia  VALUES ('Rachel Carson','1907','movimento ambientalista','1964');
+INSERT INTO quimica VALUES ('agua','H2O','possui grande capacidade de dissolver diversas substancias','hidrolise');
+INSERT INTO quimica VALUES ('gas helio','He','gas monoatomico, baixo peso, incolor, inodoro, nao inflamável e nao toxico','nao sofre reacao quimica');
+INSERT INTO quimica VALUES ('sal','NaCl','eh soluvel em agua','reacao de neutralizacao entre um ácido e uma base');
+INSERT INTO quimica VALUES ('areia','SiO2','rochas permeaveis','fotocatalítica');
+INSERT INTO quimica VALUES ('oxigenio','o2','gasoso,incolor,liquido e solido','culmina com a produção de luz e calor');
+INSERT INTO quimica VALUES ('acucar','C12H24O12','triboluminescencia','hidrolise');
 -- fetch some values
-SELECT * FROM  biologia  WHERE nascimento = '1635';
+SELECT * FROM quimica WHERE formula = 'H2O';
