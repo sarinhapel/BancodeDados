@@ -1,10 +1,10 @@
 -- create a table
 CREATE TABLE quimica (
  id INT (3) PRIMARY KEY
-  nome VARCHAR (),
-  formula  VARCHAR () NOT NULL,
-  propriedade VARCHAR() NOT NULL,
-  reacao VARCHAR() NOT NULL
+  nome VARCHAR (25),
+  formula  VARCHAR (25) NOT NULL,
+  propriedade VARCHAR(25) NOT NULL,
+  reacao VARCHAR (25) NOT NULL
 );
 -- insert some values
 INSERT INTO quimica VALUES ('agua','H2O','possui grande capacidade de dissolver diversas substancias','hidrolise');
